@@ -6,34 +6,90 @@ body {
 	background: url("../img/bg.jpg") no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+	background-position: center;
 	background-color: #000;
 	color: #fff;
 	font-family: 'Noto Sans', sans-serif;
 }
-.container {
-	width: 500px;
-	margin: auto;
-	text-align: center;
-}
+
 header {
-	height: 200px;
-	background-image: url("../img/header.png");
-	z-index: 9999;
+	padding: 0;
+	margin: 0;
+	height: 220px;
+	background: linear-gradient(#fff, #afafcf);
+	background-size:  cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+	color: #282829;
+	
 }
+
 #me {
-	height: 120px;
-	width: 120px;
-	margin: 50px auto;
+	height: 200px;
+	width: 200px;
+	margin: 20px auto;
 	border-radius: 50%;
 	border-style: solid;
 	border-width: 5px;
-	border-color: rgba(200,200,200, 0.2);
+	border-color: rgba(150,150,150, 0.4);
+}
+nav {
+	margin: 0;
+	margin-top: -20px;
+	padding: 0;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+nav ul li {
+	padding: 10px 20px;
+	list-style: none;
+	border: 2px solid #c33;
+	border-radius: 15px;
+	background: #282829;
+	
+}
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+nav ul li:hover {
+	border: 2px solid #393;
+	cursor: pointer;
+}
+nav > #nav1 {
+	float: left;
+}
+nav > #nav1 li {
+	float: left;
+	margin-left: 40px;
 
 }
+nav > #nav2 {
+	float: right;
+}
+nav > #nav2 li {
+	float: right;
+	margin-right: 40px;
+}
+.container {
+	width: 500px;
+	margin: 0px auto;
+	margin-top: 150px;
+	text-align: center;
+	clear: left;
+}
+
+
 h1 {
 	margin: 0;
 	padding: 0;
+	padding-top: 30px;
 	font-size: 30px;
+
 }
 h2 {
 	margin: 0;
@@ -45,4 +101,6 @@ h2 {
 .about {
 	width: 100%;
 	font-family: 'Muli', sans-serif;
+	line-height: 1.5;
+
 }
