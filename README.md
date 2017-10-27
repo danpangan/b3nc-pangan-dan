@@ -7,3 +7,11 @@
 ## 2017-10-25
 ### Getting started with GitLab
 This is my first feedback.
+
+# Feedback
+## 2017-10-26
+### List, Tables, Forms Formatting
+Appreciated the way of teaching technical matters using non-technical words.
+
+nice to know about the proper way of naming html elemnts, but I think it's better to introduce naming conventions (Camel back notation/Camel case) properly as early as possible to reduce conflicts and improve sync on later topics :)
+

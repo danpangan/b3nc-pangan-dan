@@ -314,6 +314,86 @@
 
 	<hr>
 
+	<fieldset>
+		<legend>Contact Details</legend>
+		<label for="email"></label>
+		<input type="email" name="email">
+		<label for="mobile"></label>
+		<input type="mobile" name="mobile" value="+63">
+	</fieldset>
+
+	<hr>
+
+	<form name="details" action="" method="">
+		<table width="400">
+			<tr>
+				<td>
+					<fieldset>
+						<legend>Your Details</legend>
+						<table>
+							<tr>
+								<td><label for="name">Name</label></td>
+								<td><input type="text" name="name" size="33"></td>
+							</tr>
+							<tr>
+								<td><label for="email">Email</label></td>
+								<td><input type="email" name="email" size="33"></td>
+							</tr>
+						</table>
+					</fieldset>
+					<fieldset>
+						<legend>Your Review</legend>
+
+						<table>
+							<tr>
+								<td><label for="how">How did you hear about us?</label>
+									<select name="how">
+										<option value="google" selected>Google</option>
+										<option value="facebook">Facebook</option>
+										<option value="instagram">Instagram</option>
+										<option value="blog">Blog</option>
+										<option value="website">Website</option>
+										<option value="referral">Referral</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>Would you visit again?</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="radio" id="yesOption" name="visitOption" value="yes">
+									<label for="yesOption">Yes</label>
+
+									<input type="radio" id="no" name="visitOption" value="no">
+									<label for="no">No</label>
+
+									<input type="radio" id="maybe" name="visitOption">
+									<label for="maybe">Maybe</label>
+								</td>
+							</tr>
+							<tr>
+								<td><label for="comments">Comments:</label></td>
+							</tr>
+							<tr>
+								<td><textarea name="comments" rows="4" cols="40"></textarea></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="updateMe" name="updateMe" value="updateMe" checked><label for="updateMe">Sign me up for email updates</label></td>
+							</tr>
+							<tr>
+								<td><input type="submit" name="signUp" value="Submit Review"></td>
+							</tr>
+
+						</table>
+					</fieldset>
+				</td>
+			</tr>
+		</table>
+	</form>
+
+	<hr>
+
 	&#10031; &#10084; &hearts; &#10084; &#10031; &#9992; &#9992; &#9992; <br>
 	<span style="font-size: 25px;"><strong>&#9763;</strong></span> Resident Evil
 
