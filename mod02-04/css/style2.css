@@ -1,0 +1,180 @@
+.dashboard-thumbnail {
+	width: 40%;
+	height: 100px;
+	display: inline-block;
+}
+
+.dashboard-circles {
+	height: 70px;
+	width: 70px;
+	background-color: #f00;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 70px;
+	color: #fff;
+	float: left;
+	margin-right: 20px;
+}
+
+#postCircle {
+	background-color: #c400d6;
+	margin-left: 60px;
+}
+
+i.fa {
+	font-size: ;
+}
+
+#imageCircle {
+	background-color: #09c;
+	margin-left: 60px;
+}
+
+#postTitle {
+	width: 100%;
+	padding: 10px;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	border: 1px solid #999;
+	font-family: "Roboto", Arial, sans-serif;
+
+	background-color: #000;
+	color: #fcf014;
+
+}
+
+#postContent {
+	width: 100%;
+	height: 100px;
+	padding: 10px;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	resize: none;
+	font-family: "Roboto", Arial, sans-serif;
+
+	background-color: #000;
+	color: #fcf014;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+color: #fcf014 !important;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #ddd;
+	font-family: "Roboto", Arial, sans-serif;
+}
+
+.wrapper {
+	width: 700px;
+	margin: 0 auto;
+	background-color: #000;
+	color: #4caf33;
+}
+
+header {
+	height: 50px;
+	background-color: #fff; 
+	color: #000;
+	line-height: 50px;
+	font-size: 10px;
+}
+
+#headerLogo {
+	margin: 10px;
+	width: 30px;
+	float: left;
+}
+
+#iconHolder {
+	margin-top: 2px;
+	float: right;
+}
+
+
+
+#iconHolder>i.fa {
+	font-size: 25px;
+	margin-right: 10px;
+}
+
+footer {
+	height: 30px;
+	background-color: #fff; 
+	color: #000;
+	text-align: center;
+	line-height: 30px;
+}
+
+main {
+	padding: 20px;
+}
+
+.btn {
+	border: none;
+	padding: 15px 30px;
+	font-size: 14px;
+	border-radius: 5px;
+	color: #fff;
+}
+
+.btn-blue {
+	background-color: #09c;
+}
+
+.btn-green {
+	background-color: #c400d6;
+}
+
+#btnBrowse {
+	margin-right: 5px;
+}
+
+#btnPublish,
+#btnBrowse,
+#btnUpload {
+	float: right;
+}
+
+.hide-overflow {
+	overflow: hidden;
+}
+
+.img-set {
+	width: 100px;
+	height: 70px;
+	padding: 5px;
+	background-color: #fff;
+	border-radius: 3px;
+	margin: 0 5px;
+}
+
+.img-set-holder {
+	margin: 20px 22px;
+}
+
+.inline-blocked {
+	display: inline-block;
+}
+
+div.inline-blocked {
+	padding-top: 5px;
+}
+
+h3.inline-blocked {
+	float: left;
+}
+
+.dashboard-text {
+	margin: 0;
+	width: 100%;
+	font-size: 24px;
+	text-align: center;
+
+}
+

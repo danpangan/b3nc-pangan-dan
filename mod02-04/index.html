@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+
+	<title>CSS Prep Course</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
+
+	<script type="text/javascript">
+		function winMins() {
+			window.minimize();
+		}
+
+		function winMax() {
+			alert('world');
+		}
+	</script>
+
+</head>
+<body>
+
+	<div class="wrapper">
+		
+		<header>
+			<img id="headerLogo" src="img/gwindows_logo.png">
+			<h1>GITBLOG COMMIT
+
+				<div id="iconHolder">
+					<i class="fa fa-window-minimize" aria-hidden="true"></i>
+					<i class="fa fa-window-maximize" aria-hidden="true"></i>
+					<i class="fa fa-window-close-o" aria-hidden="true"></i>
+				</div>
+			</h1>
+		</header>
+
+		<main>
+			<div class="main-dashboard">
+				<h3 class="inline-blocked"><i class="fa fa-home" aria-hidden="true"></i> Dashboard</h3>
+			
+				<div class="dashboard-thumbnail">
+					<div id="postCircle" class="dashboard-circles">
+						<i class="fa fa-file-text-o fa-lg" aria-hidden="true"></i>
+					</div>
+
+					<div class="inline-blocked">
+						<p class="dashboard-text">5</p>
+						<p class="dashboard-text">posts</p>
+					</div>
+				</div>
+
+
+				<div class="dashboard-thumbnail">
+					<div id="imageCircle" class="dashboard-circles">
+						<i class="fa fa-picture-o fa-lg" aria-hidden="true"></i>
+					</div>
+
+					<div class="inline-blocked">
+						<p class="dashboard-text">13</p>
+						<p class="dashboard-text">images</p>
+					</div>
+				</div>
+
+
+			</div>
+
+			<div>
+				<h3><i class="fa fa-plus-circle" aria-hidden="true"></i> New Post</h3>
+
+				<form class="hide-overflow" action="" method="post">
+					<input id="postTitle" type="text" name="" value="" placeholder="$ Enter your post title">
+					<textarea id="postContent" type="text" name="" value="" placeholder="$ Enter post content here"></textarea>
+
+					<button id="btnPublish" class="btn btn-blue" type="button" name="button">$ Push</button>
+				</form>
+			</div>
+
+			<div>
+				<h3><i class="fa fa-cloud-upload" aria-hidden="true"></i> Upload Image</h3>
+
+				<div class="img-set-holder">
+					<img class="img-set" src="https://lorempixel.com/300/300" alt="">
+					<img class="img-set" src="https://lorempixel.com/300/300" alt="">
+					<img class="img-set" src="https://lorempixel.com/300/300" alt="">
+					<img class="img-set" src="https://lorempixel.com/300/300" alt="">
+					<img class="img-set" src="https://lorempixel.com/300/300" alt="">
+				</div>
+
+				<form class="hide-overflow" action="" method="post">
+					
+					<button id="btnUpload" class="btn btn-green" type="button" name="btnUpload">$ Upload</button>
+					<button id="btnBrowse" class="btn btn-blue" type="button" name="btnBrowse">$ Browse</button>
+				</form>
+
+			</div>
+
+		</main>
+
+		<footer>
+			<p>Dan Limuel Pangan &copy; 2017</p>
+		</footer>
+
+	</div><!--end of wrapper-->
+
+	<script type="text/javascript" src="https://use.fontawesome.com/63421b52b2.js"></script>
+
+</body>
+</html>
