@@ -154,6 +154,10 @@ main {
 	margin: 0 5px;
 }
 
+.img-set:hover {
+	background-color: #f00;
+}
+
 .img-set-holder {
 	margin: 20px 22px;
 }

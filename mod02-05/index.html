@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	
+	<title>Intro to CSS</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script type="text/javascript">
+		
+		function getWord() {
+			var	sWord = document.getElementById("selectedWord").value;
+			var pWord= document.getElementById("testP").innerHTML;
+			var eachWord = pWord.split(" ");
+			var newP = "";
+
+			for (x=0; x<eachWord.length; x++)
+			{
+				
+				var newWord = "<span id='span" + x + "'>" + eachWord[x] + "</span> ";
+
+				newP = newP + newWord;
+			}
+
+			document.getElementById("testP").innerHTML = newP;
+
+			for (x=0; x<eachWord.length; x++)
+			{
+
+				if(eachWord[x].trim() == sWord.trim()) {
+					document.getElementById("span" + x).style.background = "#00f";
+				}
+				else {
+					
+				}
+			}
+
+			document.getElementById("selectedWord").value = "";
+			
+		}
+
+	</script>
+
+</head>
+<body>
+
+	<main class="wrapper">
+		
+		<!--:link (unvisited)-->
+		<a href="https://google.com">Go to Google</a>
+		<hr>
+		
+		<!--:visited (visited)-->
+		<a href="https://fb.com">Go to Facebook</a>
+		<hr>
+		
+		<!--:focus (focused)-->
+		<a href="https://youtube.com">Go to Youtube</a>
+		<hr>
+		
+		<!--:hover (hover)-->
+		<a href="https://youtube.com">Go to Hacker News</a>
+		<hr>
+
+		<a href="">asgfasdhjgsgfjfdlhg</a>
+		<hr>
+
+		<p>I am a paragraph</p>
+
+		<div id="test">I am a div container with id of test.</div>
+		<br>
+
+		<span class="spans">I am a span with class spans</span>
+		<span class="spans">I am a span with class spans</span>
+		<span class="spans">I am a span with class spans</span>
+		<span class="spans">I am a span with class spans</span>
+		<span class="spans">I am a span with class spans</span>
+
+		<div class="box">
+			<div>
+				<p id="testP">I am a paragraph inside a div container with class box</p>	
+			</div>
+		</div>
+
+		<form>
+			Choose word to highlight
+			<input type="text" id="selectedWord">
+			<input type="button" value="Highlight Word" onclick="getWord()">
+		</form>
+
+	</main>
+
+</body>
+</html>

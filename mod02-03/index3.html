@@ -2,6 +2,18 @@
 <html>
 <head>
 	<title></title>
+
+	<script type="text/javascript">
+		
+		function chooseFiles() {
+			document.getElementById("chooseFile").click();
+		}
+
+		function selectFiles(val) {
+			alert(val);
+			document.getElementById("img1").src=val;
+		}
+	</script>
 </head>
 <body>
 	<div id="container">
@@ -47,7 +59,7 @@
 				<h2>Upload Image</h2>
 
 				<div>
-					<img src="http://www.artsalamandre.com/wp-content/uploads/2016/03/placeholder.png" width="100px" height="100px">
+					<img id="img1" src="http://www.artsalamandre.com/wp-content/uploads/2016/03/placeholder.png" width="100px" height="100px">
 					<img src="http://www.artsalamandre.com/wp-content/uploads/2016/03/placeholder.png" width="100px" height="100px">
 					<img src="http://www.artsalamandre.com/wp-content/uploads/2016/03/placeholder.png" width="100px" height="100px">
 					<img src="http://www.artsalamandre.com/wp-content/uploads/2016/03/placeholder.png" width="100px" height="100px">
@@ -55,7 +67,8 @@
 				</div>
 				
 				<form name="" action="" method="" enctype="">
-					<input type="button" name="" value="Browse">
+					<input type="file" id="chooseFile" value="Browse" hidden onchange="">
+					<input type="button" name="" value="Browse" onclick="chooseFiles();">
 					<input type="Submit" name="" value="Upload">
 				</form>
 			</div>

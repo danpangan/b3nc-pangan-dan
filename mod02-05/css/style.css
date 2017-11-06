@@ -1,0 +1,51 @@
+@charset="utf-8";
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+	padding: 20px;
+	border: 2px solid #000;
+
+}
+
+/*	:link (unvisited link) */
+
+a:link {
+	color: #008000;
+}
+
+/*	:visited (visited link) */
+a:visited {
+	color: #066;
+}
+
+a:focus {
+	color: #066;
+	border: 5px solid #992600;
+	outline: none;
+}
+
+a:hover {
+	background: #ccc;
+	color: #fff;
+}
+
+a:active {
+	color: #00f;
+}
+
+.wrapper:hover {
+	background: #ddf;
+	color: #fff
+}
+
+hr {
+	border:	2px solid #f00;
+}
+
+p,
+#test,
+.spans,
+.box p {
+	color: #99004d;
+}
