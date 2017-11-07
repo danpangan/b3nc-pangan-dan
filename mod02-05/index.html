@@ -11,34 +11,44 @@
 
 	<script type="text/javascript">
 		
+		window.onload = function addElementEvent() {
+
+			var btn = document.getElementById("highlightBtn");
+			btn.addEventListener("click", getWord);
+		}
+
 		function getWord() {
+
 			var	sWord = document.getElementById("selectedWord").value;
 			var pWord= document.getElementById("testP").innerHTML;
 			var eachWord = pWord.split(" ");
 			var newP = "";
 
-			for (x=0; x<eachWord.length; x++)
-			{
-				
-				var newWord = "<span id='span" + x + "'>" + eachWord[x] + "</span> ";
+			if(sWord.trim() != "") {
 
-				newP = newP + newWord;
-			}
-
-			document.getElementById("testP").innerHTML = newP;
-
-			for (x=0; x<eachWord.length; x++)
-			{
-
-				if(eachWord[x].trim() == sWord.trim()) {
-					document.getElementById("span" + x).style.background = "#00f";
-				}
-				else {
+				for (x=0; x<eachWord.length; x++)
+				{
 					
+					var newWord = "<span id='span" + x + "'>" + eachWord[x] + "</span> ";
+					newP = newP + newWord;
 				}
+
+				document.getElementById("testP").innerHTML = newP;
+
+				for (x=0; x<eachWord.length; x++)
+				{
+					if(eachWord[x].trim() == sWord.trim()) {
+						document.getElementById("span" + x).style.background = "#f4f442";
+					}
+				}
+
+				document.getElementById("selectedWord").value = "";
+
 			}
 
-			document.getElementById("selectedWord").value = "";
+			else {
+				alert("please enter a word to hightlight");
+			}
 			
 		}
 
@@ -81,14 +91,14 @@
 
 		<div class="box">
 			<div>
-				<p id="testP">I am a paragraph inside a div container with class box</p>	
+				<p id="testP">I am a paragraph inside a div container with class box I am a paragraph inside a div container with class box I am a paragraph inside a div container with class box </p>	
 			</div>
 		</div>
 
 		<form>
-			Choose word to highlight
+			Enter word to highlight
 			<input type="text" id="selectedWord">
-			<input type="button" value="Highlight Word" onclick="getWord()">
+			<input type="button" id="highlightBtn" value="Highlight Word">
 		</form>
 
 	</main>
