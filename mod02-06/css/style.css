@@ -1,0 +1,22 @@
+ @charset="utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+ .wrapper {
+ 	margin: 0 auto;
+ 	width: 70%;
+ 	border: 1px solid #000;
+ }
+
+ h1
+ , p {
+ 	background-color: #dde0e3;
+ }
+
+ em
+ , strong {
+ 	background-color: #b2d6ff;
+ 	display: inline;
+ } 
