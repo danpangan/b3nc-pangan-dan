@@ -30,7 +30,7 @@
 
 	```java
 	println("this is a java line");
-	```
+	```  
 
 	```c
 	printf("this is a turbo c line");
@@ -38,8 +38,8 @@
 
 ## Emoji
 
-	:monkey:
-	:star2:
-	:speech_balloon:
-	:zap:
-	:v:
+	:monkey:  
+	:star2:  
+	:speech_balloon:  
+	:zap:  
+	:v:  
