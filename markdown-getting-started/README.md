@@ -28,18 +28,29 @@
 
 	Inline `code` has `back-ticks around` it
 
-	```java
-	println("this is a java line");
-	```  
+```java
+println("this is a java line");
+```  
 
-	```c
-	printf("this is a turbo c line");
-	```
+```c
+printf("this is a turbo c line");
+```
 
 ## Emoji
 
-	:monkey:  
-	:star2:  
-	:speech_balloon:  
-	:zap:  
-	:v:  
+:monkey:  
+:star2:  
+:speech_balloon:  
+:zap:  
+:v:  
+
+
+## Tables
+
+| firstname | lastname | No. |
+|:----------|:---------|:----|
+| Hanamichi | Sakuragi | 10  |
+| Hisashi   | Mitsui   |     |
+| Ryota     | Miyagi   |     |
+| Takenori  | Akagi    | 4   |
+| Kaede     | Rukawa   | 11  |
