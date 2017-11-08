@@ -16,6 +16,7 @@ Appreciated the way of teaching technical matters using non-technical words.
 nice to know about the proper way of naming html elemnts, but I think it's better to introduce naming conventions (Camel back notation/Camel case) properly as early as possible to reduce conflicts and improve sync on later topics :)  
 
 ## 2017-11-08
-### 
+### Updating of remote repo using gitlab
+Instructions are well given, didn't have a hard time figuring what to do.
 
 
