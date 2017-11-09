@@ -1,0 +1,33 @@
+@charset="utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.grandParent {
+	background: skyblue;
+}
+.parent {
+	background: pink;
+}
+div {
+	padding: 20px;
+}
+p {
+	/*margin-top: -20px;*/
+	margin-left: 50px; 
+}
+input[name="firstname"] {
+	margin-right: 20px;
+}
+
+strong	{
+	position: relative;
+	top: 100px;
+	left: 100px;
+	bottom: 100px;
+	background: yellow;
+}
+
+
