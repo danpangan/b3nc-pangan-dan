@@ -26,7 +26,7 @@
 	```no-highlight
 	Inline `code` has `back-ticks around` it.```  
 
-	Inline `code` has `back-ticks around` it
+	Inline `code` has `back-ticks around` it  
 
 ```java
 println("this is a java line");
