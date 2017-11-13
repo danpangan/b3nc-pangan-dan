@@ -1,0 +1,51 @@
+h1 {
+	background-color: grey;
+	margin: 0;
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+p {
+	height: 1000px;
+	background-color: #efefef;
+	position: relative;
+	top: 70px;
+	left: 70px;
+}
+
+/*css z-index property*/
+
+div {
+	width: 100px;
+	height: 100px;
+	border: 1px solid #000;
+}
+
+.blue {
+	background-color: blue;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	z-index: 3;
+}
+
+.yellow {
+	background-color: yellow;
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	z-index: 2;
+/*	opacity: .5;*/
+}
+
+.orange {
+	background-color: orange;
+	position: absolute;
+	top: 60px;
+	left: 60px;
+	z-index: 1;
+}
