@@ -61,24 +61,30 @@ body {
 	height: 160px;
 	background: #b2d6ff;
 	float: left;
+	position: relative;
 }
 
-.avatar {
-	margin: 25px;
-	height: 60px;
-	width: 60px;
+.avatar > img {
+	margin: 20px;
+	height: 70px;
+	width: 70px;
 	background-color: #d6e9f3;
-	border-radius: 50%;
+	border-radius: 10%;
 	float: left;
 }
 
+.avatar > img {
+
+}
+
 .username {
-	margin: 30px;
+	margin-top: 30px;
 }
 
 .comment {
 	margin: 10px;
 	text-align: justify;
+	overflow: hidden;
 }
 
 .clear:after {
@@ -86,4 +92,37 @@ body {
 	clear: both;
 	display: block;
 
+}
+
+.block-with-text {
+	overflow: hidden;
+	position: relative;
+	line-height: 1.2em;
+	max-height: 3.6em;
+	text-align: justify;
+	margin-right: -1em;
+	padding-right: 30px;
+}
+
+.block-with-text:before {
+	content: "...";
+	position: absolute;
+	right: 17px;
+	bottom: 0;
+}
+
+.block-with-text:after {
+	content: "";
+	position: absolute;
+	right: : 17px;
+	width: 1em;
+	height: 1em;
+	margin-top: 0.2em;
+	background-color: #fff;
+}
+
+.read-more {
+	position: absolute;
+	right: 18px;
+	bottom: 16px;
 }
