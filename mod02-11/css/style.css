@@ -13,10 +13,12 @@ body {
 nav {
 	padding: 10px;
 	position: fixed;
-	top: 0px;
+	top: 1px;
 	right: 0px;
-	background-color: #2B4E86;
+	background-color: #E08500;
+	/*border-bottom: 4px solid #2B4E86;*/
 	z-index: 99999;
+	box-shadow: 7px 3px 3px 3px #ccc;
 }
 
 nav ul li {
@@ -24,7 +26,7 @@ nav ul li {
 	padding-left: 10px;
 	float: left;
 	list-style: none;
-	border-right: 1px solid #E3F2FD;
+	border-right: 1px solid #2B4E86;
 }
 
 nav ul li a {
@@ -42,6 +44,10 @@ hr {
 	margin-top: 50px;
 }
 
+.wrapper h3 {
+	margin-bottom: 50px;
+}
+
 .container > * {
 	color: #E3F2FD; /*#90AFDD*/
 }
@@ -51,10 +57,6 @@ hr {
 	background-color: #2B4E86;
 	box-shadow: 10px 10px 5px 5px #ccc;
 } 
-
-.container {
-	margin: 10px;
-}
 
 .container h1,
 .container h2,
@@ -69,6 +71,10 @@ hr {
 	content: "";
 	clear: both;
 	display: block;
+}
+
+footer {
+	height: 250px;
 }
 
 /*************   CSS for Item #1   *************/
