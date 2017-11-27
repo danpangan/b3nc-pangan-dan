@@ -1,0 +1,7 @@
+#comments .wellnth-child(even) {
+	border: 1px solid #f00;
+}
+
+#comments .wellnth-child(odd) {
+	border: 1px solid #00f;
+}
