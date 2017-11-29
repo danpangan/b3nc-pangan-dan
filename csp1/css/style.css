@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	padding: 20px;
+	background-color: #efefff;
+}
+
+.container .card .card-title {
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.container .card .card-content .product-name {
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.carousel {
+	height: 250px;
+}
+
+.carousel .carousel-item {
+	display: none;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.carousel .carousel-item {
+  height: auto;
+  left: -50px;
+}
+
+.carousel .carousel-item > img {
+	width: 150%;
+}

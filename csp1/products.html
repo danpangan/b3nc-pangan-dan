@@ -13,15 +13,128 @@
 	<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	
 </head>
-<body>
+<body onload="getWidth()">
+
+	<div class="container">
+		<div class="section">
+			
+
+			<div class="row">
+				<div class="col s12 m4">
+					<div class="card">
+						<div class="card-image">
+							<img src="img/products/placeholder.png">
+						</div>
+						<div class="card-content center">
+							<h6 class="product-name">Name: Product #1</h6>
+							<h6>Price: Php 000.00</h6>
+								
+							<a class="waves-effect waves-light btn"><i class="material-icons left"><i class="material-icons">add_shopping_cart</i></i>Add to Cart</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12 m4">
+					<div class="card">
+						<div class="card-image">
+							<img src="img/products/placeholder.png">
+						</div>
+						<div class="card-content center">
+							<h6 class="product-name">Name: Product #2</h6>
+							<h6>Price: Php 000.00</h6>
+							
+							<a class="waves-effect waves-light btn"><i class="material-icons left"><i class="material-icons">add_shopping_cart</i></i>Add to Cart</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12 m4">
+					<div class="card">
+						<div class="card-image">
+							<img src="img/products/placeholder.png">
+						</div>
+						<div class="card-content center">
+							<h6 class="product-name">Name: Product #3</h6>
+							<h6>Price: Php 000.00</h6>
+							
+							<a class="waves-effect waves-light btn"><i class="material-icons left"><i class="material-icons">add_shopping_cart</i></i>Add to Cart</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12 m4">
+					<div class="card">
+						<div class="card-image">
+							<img src="img/products/placeholder.png">
+						</div>
+						<div class="card-content center">
+							<h6 class="product-name">Name: Product #4</h6>
+							<h6>Price: Php 000.00</h6>
+							
+							<a class="waves-effect waves-light btn"><i class="material-icons left"><i class="material-icons">add_shopping_cart</i></i>Add to Cart</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12 m4">
+					<div class="card">
+						<div class="card-image">
+							<img src="img/products/placeholder.png">
+						</div>
+						<div class="card-content center">
+							<h6 class="product-name">Name: Product #5</h6>
+							<h6>Price: Php 000.00</h6>
+							
+							<a class="waves-effect waves-light btn"><i class="material-icons left"><i class="material-icons">add_shopping_cart</i></i>Add to Cart</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12 m4">
+					<div class="card">
+						<div class="card-image">
+							<img src="img/products/placeholder.png">
+						</div>
+						<div class="card-content center">
+							<h6 class="product-name">Name: Product #6</h6>
+							<h6>Price: Php 000.00</h6>
+							
+							<a class="waves-effect waves-light btn"><i class="material-icons left"><i class="material-icons">add_shopping_cart</i></i>Add to Cart</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
 
 
+			
+
+		</div>
+	</div>
 
 
 	<!--Import jQuery before materialize.js-->
 	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
 	<script type="text/javascript" src="js/materialize.js"></script>
+
+	<script type="text/javascript">
+		
+		function getWidth() {
+
+			$(document).ready(function(){
+
+				var winWidth = $('.container').width();
+
+				alert(winWidth);
+
+			});
+		}
+		
+
+	</script>
 
 </body>
 </html>
