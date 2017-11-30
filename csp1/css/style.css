@@ -4,9 +4,44 @@
 	box-sizing: border-box;
 }
 
+
+
 .container {
 	padding: 20px;
-	background-color: #efefff;
+	/*background-color: #efefff;*/
+}
+
+nav {
+	padding-right: 20px;
+	background-color: transparent;
+	border-bottom: none;
+	box-shadow: none;
+}
+
+nav .brand-logo {
+	margin-left: 20px;
+	font-family: 'Dancing Script', cursive;
+	font-weight: bold;
+	font-size: 2.3em;
+}
+
+nav ul a {
+	font-size: 1.2em;
+}
+
+#banner {
+	padding: 0;
+	width: 100%;
+	height: 425px;
+	background-image: url('../img/banner.jpg');
+	background-size: cover;
+	background-position: center top;
+}
+
+#banner h1 {
+	font-family: 'Dancing Script', cursive;
+	font-weight: bold;
+	font-size: 5em;
 }
 
 .container .card .card-title {
@@ -39,4 +74,62 @@
 
 .carousel .carousel-item > img {
 	width: 150%;
+}
+
+.contact-icon {
+	margin-right: 10px;
+}
+
+.btn {
+	border-radius: 5px;
+}
+
+
+
+// FIX SIDENAV SPACING
+.side-nav li>a {
+  padding: 0 16px;
+}
+//FIX SIDEBAR DIVIDERS
+.side-nav .divider {
+  margin:0;
+  height:8px;
+  border-bottom:1px solid #e0e0e0;
+  background-color: transparent;
+}
+
+// SIDENAV HEADER
+.sidenav-header {
+background: url("../images/user-bg.jpg") no-repeat center center;
+background-size: cover;
+margin-bottom: 0px;
+padding: 15px 0 0 15px;
+  .row {
+    margin-bottom: 0;
+  }
+}
+.sidenav-footer {
+margin-bottom: 0px;
+padding: 0;
+  .row {
+    margin-bottom: 0;
+    .social-icons {
+      a {
+        opacity: 0.5;
+        padding: 0;
+        text-align:center;
+        &:hover {
+          background-color:inherit;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+footer.page-footer {
+	height: 100px;
+	background-image: url('../img/footer-bg2.png');
+	background-size: cover;
+	background-position: right bottom;
 }
