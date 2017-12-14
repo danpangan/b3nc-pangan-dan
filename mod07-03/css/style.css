@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: grey;
+}
+
+.wrapper {
+	margin: 0 auto;
+	background-color: #fff;
+	width: 80vw;
+	height: 100vh;
+	text-align: center;
+}
+
+.clear {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+h1,
+hr,
+p {
+	margin: 25px 0;
+}
+
+h1 {
+	padding: 25px;
+}
+
+p {
+	font-size: 3em;
+	color: #fff;
+}
+
+input, button {
+	padding: 25px;
+	margin: 25px auto;
+	font-size: 2em;
+	display: block;
+}

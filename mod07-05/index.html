@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<div id="wrapper" class="wrapper clearfix">
+		<div class="form">
+			<form name="inputForm">	
+				<label for="num">Enter Number</label>
+				<input type="text" name="num" id="num">
+				<br/>
+				<label for="step">Enter Step</label>
+				<input type="text" name="step" id="step">
+				<br/>
+				<input type="button" value="Generate" onclick="generateTable()">
+			</form>
+		</div>
+		<div id="board-wrapper"></div>
+	</div>
+
+	<script>
+		function generateTable() {
+			var num = document.inputForm.num.value;
+			var step = parseInt(document.inputForm.step.value);
+
+			var z = step;
+			var row = num/step;
+			var element = "";
+			var boxClass = "";
+			var classBox = "";
+			var boxHeight = row/4;
+			boxHeight = Math.round(boxHeight);
+			boxHeight = 90/boxHeight;
+
+			for(var x=0; x<=(row/4); x++) {
+				for(var y=0; y<4; y++) {
+					if(z <= num) {
+						if(((x%2) == 0) && ((y%2) == 0)) {
+							boxClass = "black";
+						} else if(((x%2) == 0) && ((y%2) == 1)) {
+							boxClass = "white";
+						} else if(((x%2) == 1) && ((y%2) == 0)) {
+							boxClass = "white";
+						} else {
+							boxClass = "black";
+						}
+						element += "<div class='box " + boxClass + "'><h2>" + z + "</h2></div>";
+						z += step;
+					}	
+				}
+			}
+
+			document.getElementById("board-wrapper").innerHTML = element;
+			classBox = document.getElementsByClassName("box");
+
+			for(var x=0; x<classBox.length; x++) {
+				classBox[x].style.height = boxHeight + "vh";
+				classBox[x].style.lineHeight = boxHeight + "vh";
+			}			
+		}
+	</script>
+
+</body>
+</html>

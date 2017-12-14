@@ -1,0 +1,16 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: grey;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 80vw;
+	height: 100vh;
+	background-color: #fff;
+}

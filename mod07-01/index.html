@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-3.2.1.js"></script>
+</head>
+<body>
+
+	<select onchange="createCanvas(this.value)">
+		<option value="0">-select number of boxes</option>
+		<option value="4">4x4</option>
+		<option value="5">5x5</option>
+		<option value="6">6x6</option>
+		<option value="7">7x7</option>
+	</select>
+
+	<div id="wrapper" class="wrapper clearfix">
+		<nav>	
+			<div class="nav-box black" onclick="changeColor(this.className)"></div>
+			<div class="nav-box red" onclick="changeColor(this.className)"></div>
+			<div class="nav-box orange" onclick="changeColor(this.className)"></div>
+			<div class="nav-box yellow" onclick="changeColor(this.className)"></div>
+			<div class="nav-box green" onclick="changeColor(this.className)"></div>
+			<div class="nav-box blue" onclick="changeColor(this.className)"></div>
+			<div class="nav-box indigo" onclick="changeColor(this.className)"></div>
+			<div class="nav-box violet" onclick="changeColor(this.className)"></div>
+		</nav>
+
+		
+	</div>
+
+	
+	<script>
+		
+		function createCanvas(num) {
+			var wrapper = document.getElementById("wrapper");
+			var boxHeight = 100 / parseInt(num);
+			var boxWidth = 100 / parseInt(num);
+
+			var z=0;
+			for(x=0; x<num; x++) {
+				for(y=0; y<num; y++) {
+					var box = document.createElement("div");
+					var element = wrapper.appendChild(box);
+					$(element).addClass("box");
+					$(element).attr('id', "box" + ++z);
+					$(element).attr('onmousedown', "changeColor(this.className, this.id)");
+				}
+			}
+
+			boxHeight = boxHeight + "vh";
+			boxWidth = boxWidth + "%";
+			$(".box").css("height", boxHeight);
+			$(".box").css("width", boxWidth);
+		}
+
+		var navClass;
+
+		function changeColor(className, id = null) {
+			if(id == null) {
+				navClass = className.replace('nav-box ', "");
+			} else {
+				$('.box').mousemove(function(e){
+					/*var element = document.getElementById(id);*/
+					$("#" + id).css('background-color', navClass);
+					console.log(id);
+					
+			    }).mouseup(function() {
+			    	$('.box').unbind('mousemove');
+			    });
+			}
+		}
+	</script>
+
+</body>
+</html>

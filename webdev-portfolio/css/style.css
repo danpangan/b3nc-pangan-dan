@@ -1,0 +1,32 @@
+body {
+
+}
+
+.well {
+	position: relative;
+}
+
+
+.portfolio-desktop-img {
+	width: 400px;
+	position: absolute;
+}
+
+.portfolio-tablet-img {
+	width: 200px;
+	position: absolute;
+	right: 50px;
+
+}
+
+.portfolio-phone-img {
+	width: 150px;
+	position: absolute;
+	right: 0;
+}
+
+.clearfix:after {
+	display: block;
+	content: "";
+	clear: both;
+}

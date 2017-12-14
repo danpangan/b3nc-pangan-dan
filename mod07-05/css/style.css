@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+}
+
+body {
+	background-color: #555;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 80vw;
+	height: 100vh;
+}
+
+.form {
+	width: 100%;
+	height: 10vh;
+}
+
+.box {
+	width: 25%;
+	border: 1px solid #000;
+	text-align: center;
+	float: left;
+}
+
+.clearfix:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+.white {
+	background-color: #fff;
+	color: #000;
+}
+
+.black {
+	background-color: #000;
+	color: #fff;
+}

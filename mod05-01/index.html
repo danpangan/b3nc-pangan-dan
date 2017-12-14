@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<title>What JavaScript Can Do</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		
+		<h1>What JavaScript can do</h1>
+		<hr>
+
+		<h2>Javascript can hide/show HTML elements.</h2>
+		<button id="hideAll" onclick="hideAll()">Hide All</button>
+		<br>
+		<button id="showAll" onclick="showAll()">Show All</button>
+
+		<div id="all">
+			<h2 id="content">Javascript can change HTML content.</h2>
+			<button onclick="changeContent()">Change HTML Content</button>
+
+			<h2 >Javascript can change HTML attributes.</h2>
+			<button onclick="changeAttr()">Change Image Height</button>
+			<button onclick="changeImage()">Change Image</button>
+
+			<img id="attr" src="img/image1.jpg" height="230">
+
+			<h2 id="css">Javascript can change HTML styles.</h2>
+			<button onclick="changeColor()">Change Style</button>
+
+			<h2>Javascript can get and manipulate HTML elements.</h2>
+			
+				<input id="input1" type="number" value="1">+
+				<input id="input2" type="number" value="2">=
+				<span id="sum"></span>
+				<br>
+				<button onclick="computeSum()">Compute Sum</button>
+		</div>
+
+	</div>
+
+	<script type="text/javascript">
+		function hideAll() {
+			$('#all').hide();
+		}
+		function showAll() {
+			$('#all').fadeIn();
+		}
+		function changeContent() {
+			$('#content').html("JQeury this :)");
+		}
+		function changeAttr() {
+			$('#attr').attr("height","500");
+		}
+		function changeImage() {
+			$('#attr').attr("src","img/image2.jpg");
+		}
+		function changeColor() {
+			$('#css').css("color", "blue");
+		}
+
+		function computeSum() {
+			var a = $('#input1').val();
+			var b = $('#input2').val();
+			var sum = parseInt(a) + parseInt(b);
+			
+			document.getElementById("sum").innerHTML = sum;
+
+		}
+
+
+
+	</script>
+		}
+</body>
+</html>
+
