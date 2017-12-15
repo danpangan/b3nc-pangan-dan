@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<title></title>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		
+		<div class="calculator-window">
+			
+			<div class="calc-header">
+				<input type="text" name="" id="smallText" value="" disabled="disable">
+				<input type="text" name="" id="mainInput" value="0" disabled="disable">
+			</div>
+
+			<div class="calc-body">
+				<div class="btn"><button onclick="clearAll()">CE</button></div>
+				<div class="btn"><button>C</button></div>
+				<div class="btn"><button onclick="deleteInput()">DEL</button></div>
+				<div class="btn"><button value="/" onclick="updateDisplay(this.value)">/</button></div>
+				<div class="btn"><button value="7" onclick="updateDisplay(this.value)">7</button></div>
+				<div class="btn"><button value="8" onclick="updateDisplay(this.value)">8</button></div>
+				<div class="btn"><button value="9" onclick="updateDisplay(this.value)">9</button></div>
+				<div class="btn"><button value="*" onclick="updateDisplay(this.value)">*</button></div>
+				<div class="btn"><button value="4" onclick="updateDisplay(this.value)">4</button></div>
+				<div class="btn"><button value="5" onclick="updateDisplay(this.value)">5</button></div>
+				<div class="btn"><button value="6" onclick="updateDisplay(this.value)">6</button></div>
+				<div class="btn"><button value="-" onclick="updateDisplay(this.value)">-</button></div>
+				<div class="btn"><button value="1" onclick="updateDisplay(this.value)">1</button></div>
+				<div class="btn"><button value="2" onclick="updateDisplay(this.value)">2</button></div>
+				<div class="btn"><button value="3" onclick="updateDisplay(this.value)">3</button></div>
+				<div class="btn"><button value="+" onclick="updateDisplay(this.value)">+</button></div>
+				<div class="btn"><button value="" onclick="updateDisplay(this.value)">+/-</button></div>
+				<div class="btn"><button value="0" onclick="updateDisplay(this.value)">0</button></div>
+				<div class="btn"><button value="." onclick="updateDisplay(this.value)">.</button></div>
+				<div class="btn"><button value="=" onclick="updateDisplay(this.value)">=</button></div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
