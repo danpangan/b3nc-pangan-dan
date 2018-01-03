@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess the Number</title>
+
+	<style type="text/css">
+		body {
+			font-family: "Trebuchet MS";
+		}
+		.wrapper {
+			margin: 200px auto;
+			width: 40vw;
+			height: 30vh;
+			text-align: center;
+		}
+
+		#hint img {
+			width: 300px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<h1>Guess the Number</h1>
+		<input type="text" id="guessNum" onfocus="clearTextBox()">
+		<button onclick="checkNumber()">Check</button>
+		<h2 id="hint"></h2>
+	</div>
+
+	<script type="text/javascript">
+		
+		randomNumber = Math.floor((Math.random() * 10) + 1);
+
+		function checkNumber() {
+			var guess = document.getElementById("guessNum").value;
+			var num = randomNumber;
+			console.log(num);
+			var hint = document.getElementById("hint");
+
+			if(guess == num) {
+				hint.innerHTML = "<img src='img/tama.jpg'/> May Tama Ka!!! <img src='img/tama2.png'/> BIGYAN NG JACKET YAN!!!";
+			} else {
+
+				if(guess < num) {
+					hint.innerHTML = "<img src='img/higher.jpg'/> Bimb Higher!!!";
+				} else {
+					hint.innerHTML = "<img src='img/lower.jpg'/> Bimb Lower!!!";
+				}
+			}
+		}
+
+		function clearTextBox() {
+			document.getElementById("guessNum").value = "";
+		}
+	</script>
+
+
+</body>
+</html>
