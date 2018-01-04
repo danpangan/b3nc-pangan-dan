@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Intro</title>
+</head>
+<body>
+	<!-- <center> -->
+	<div id="resultFrame" style="width: auto; margin: 0 auto; display: inline;">
+		<input type="number" id="num" onchange="getVal()" placeholder="Enter a Number">
+		<h2 id="result"></h2>
+	</div>
+	<!-- </center> -->
+
+<script type="text/javascript">
+
+	function getVal() {
+		var num = document.getElementById("num").value;
+		getSum(num);
+	}
+
+	function getSum(num) {
+
+		document.getElementById("result").innerHTML = "";
+
+		var sumEven = 0;
+		var sumOdd = 0;
+		var x = 0;
+
+		while (x <= 20) {
+
+			/*if(x%2 == 0) {
+			    
+			    sumEven += x;
+			
+			} else {
+
+				sumOdd += x;
+
+			}*/
+
+			if((x%3 == 0) && (x%5 == 0)) {
+				console.log(x + " is a multiple of 3 AND 5");
+			} else if(x%3 == 0) {
+				console.log(x + " is a multiple of 3 but NOT of 5");
+			} else if(x%5 == 0) {
+				console.log(x + " is a multiple of 5 but NOT of 3");
+			} else {
+				console.log(x + " is NOT a multiple of 5 AND 3");
+			}
+
+			x++;
+
+
+		}
+
+		var a = "";
+		/*var num = prompt("Enter a Number");*/
+		var htmlVal = "";
+
+		for(var x=num; x>0; x--) {
+			for(var z=x; z<num; z++){
+				htmlVal = document.getElementById("result").innerHTML;
+				document.getElementById("result").innerHTML = htmlVal + "&nbsp;&nbsp;";
+				//document.write("&nbsp;&nbsp;")
+			}
+			for(var y=0; y<x; y++) {
+				htmlVal = document.getElementById("result").innerHTML;
+				document.getElementById("result").innerHTML = htmlVal + "&nbsp;*&nbsp;";
+				//document.write("&nbsp;*&nbsp;");
+			}
+			htmlVal = document.getElementById("result").innerHTML;
+			document.getElementById("result").innerHTML = htmlVal + "<br>";
+			//document.write("<br>");
+
+			
+
+			//a += "*<br>";
+		}
+
+		alert(document.getElementById("resultFrame").style.width);
+
+		//document.getElementById("result").innerHTML = a;
+
+		/*console.log(sumEven);
+		console.log(sumOdd);
+		document.getElementById("result").innerHTML = "The sum of all even numbers from 0 to 50 is " + sumEven + "<br/>The sum of all odd number from 0 to 50 is " + sumOdd;
+		alert("Sum of all even: " + sumEven + "\nSum of all odd: " + sumOdd);*/
+	}
+
+</script>
+
+</body>
+</html>
