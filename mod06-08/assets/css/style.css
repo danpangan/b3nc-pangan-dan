@@ -4,33 +4,64 @@
 	box-sizing: border-box;
 }
 
+body {
+	background-image: url('../images/bg.jpeg');
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+div {
+	height: 80vh;
+}
+
 .container {
 	margin: 10px auto;
 	width: 70vw;
+	min-height: 100vh;
 	text-align: center;
 }
 
 h2 {
+	margin-top: 20px;
 	font-family: 'Trebuchet MS';
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: normal;
 }
 
-h2#day2,
-h2#day3,
-h2#day4,
-h2#day5,
-h2#day6,
-h2#day7,
-h2#day8,
-h2#day9,
-h2#day10,
-h2#day11,
-h2#day12 {
+h2 {
 	/*visibility: hidden;*/
 	display: none;
 }
 
+h2.day1 {
+	display: block;
+}
+
+h3 {
+	margin-top: 5px;
+	font-family: 'Trebuchet MS';
+	font-size: 18px;
+	font-weight: normal;
+	display: none;
+}
+
+h3.day1 {
+	display: block;
+}
+
+img {
+	margin-top: 150px;
+	width: 200px;
+}
+
+/*img#day1 {
+	display: block;
+}*/
+
 #clickMe {
-	float: right;
+	padding: 20px 80px;
+	font-size: 36pt;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
 }

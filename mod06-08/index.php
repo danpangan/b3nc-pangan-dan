@@ -19,20 +19,37 @@
 
 	$list = '';
 
+	echo "<img src='assets/images/gift1.png'>";
+
 	for($x=0; $x<12; $x++) {
 		$days = getLyrics($x);
 		$day = $days[0];
 		$gift = $days[1];
 
+
 		if($x == 0)
 			$list = $gift;
 		else if($x == 1)
-			$list = $gift . "<br>and " . $list;
+			$list = $gift . ", and " . $list;
 		else {
-			$list = $gift . ", <br>" . $list;
+			$list = $gift . ", " . $list;
 		}
 
-		echo "<h2 id='day" . ($x+1) . "'>On the $day day of Christmas my true love sent to me,<br> $list<h2><br>";
+		echo "<div id='day" . ($x+1) . "'>";
+		echo "<img src=''/>";
+		echo "<h2 class='day" . ($x+1) . "'>On the $day day of Christmas my true love sent to me,</h2>";
+
+		$listItems = explode(", ", $list);
+
+		$z=$x+1;
+
+		foreach($listItems as $listItem) {
+			echo "<h3 class='day" . ($x+1) . "' id='gift$z'>$listItem</h3>";
+			$z--;
+		}
+
+		echo "<br>";
+		echo "</div>";
 	}
 ?>
 

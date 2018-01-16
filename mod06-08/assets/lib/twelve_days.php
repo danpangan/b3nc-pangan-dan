@@ -19,7 +19,7 @@
 		 				'twelfth');
 
 		$gifts = array('A partridge in a pear tree', 
-						'Two turtle dove', 
+						'Two turtle doves', 
 						'Three french hens',
 						'Four calling birds',
 						'Five golden rings',
